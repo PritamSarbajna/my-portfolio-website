@@ -1,0 +1,201 @@
+.container {
+    
+    .whole-about {
+        display: flex;
+
+        .left {
+            width: 50%;
+
+            .card-about {
+                position: absolute;
+                top: 70%;
+                left: 10%;
+                height: 360px;
+                width: 300px;
+                transform-style: preserve-3d;
+                perspective: 600px;
+                cursor: pointer;
+                transition: 0.5s;
+                opacity: 0;
+                animation: fadeIn 2s forwards;
+                animation-delay: 2s;
+
+                &:hover {
+                    .front-card-about {
+                        transform: rotateX(-180deg);
+                    }
+
+                    .back-card-about {
+                        transform: rotateX(0deg);
+                    }
+                }
+
+                .front-card-about {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #333;
+                    backface-visibility: hidden;
+                    transform: rotateX(0deg);
+                    transition: 0.5s;
+                    font-size: 1.8rem;
+                    border-radius: 1rem;
+                    box-shadow: #ccc 8px 8px;
+
+                    .front-details {
+                        margin: 1.5rem 0.5rem;
+                        
+                        p {
+                            letter-spacing: 1px;
+                            font-weight: 50;
+                            color: #ddd;
+                        }
+
+                        span {
+                            color: #ea384d;
+                            letter-spacing: 1px;
+                            font-weight: 400;
+                        }
+
+                        q {
+                            font-style: italic;
+                        }
+                    }
+                }
+
+                .back-card-about {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #333;
+                    backface-visibility: hidden;
+                    transform: rotateX(180deg);
+                    transition: 0.5s;
+                    border-radius: 1rem;
+                    box-shadow: #ccc -8px -8px;
+
+                    .details {
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: -5%;
+
+                        .sub-details  {
+                            letter-spacing: 1px;
+
+                            h5 {
+                                font-size: 2rem;
+                                text-align: center;
+                                color: #ea384d;
+                            }
+                            
+                            ul {
+                                margin-top: -5%;
+                                list-style: none;
+                                font-size: 1.4rem;
+                                color: #ddd;
+
+                                li {
+                                    top: 0;
+                                    margin-left: -5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .right {
+            margin-left: 15%;
+            
+            .box {
+                position: absolute;
+                width: 400px;
+                height: 400px;
+                background: #222;
+                border-radius: 50%;
+                overflow: hidden;
+                cursor: grab;
+                opacity: 0;
+                animation: fadeIn 2s forwards;
+                animation-delay: 2.5s;
+                top: 70%;
+    
+                &:hover {
+    
+                    .content {
+    
+                        img {
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+    
+            .box::before {
+                content: '';
+                position: absolute;
+                inset: 0px 0px;
+                background: linear-gradient(315deg, #fa0421, #eb6f7b, #fff);
+                transition: 0.5s;
+                animation: rotate 0.5s linear infinite;
+            }
+    
+            .box:hover::before {
+                inset: -20px 0px;
+            }
+    
+            .box::after {
+                content: '';
+                position: absolute;
+                inset: 4px;
+                background: #222;
+                border-radius: 50%;
+                z-index: 1;
+            }
+    
+            .content {
+                position: absolute;
+                inset: 5px;
+                z-index: 3;
+                border-radius: 50%;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: 0.5s;
+                    pointer-events: none;
+                }
+    
+                h3 {
+                    opacity: 1;
+                    color: #fff;
+                    font-size: 4rem ;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    letter-spacing: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

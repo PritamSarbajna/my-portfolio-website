@@ -1,0 +1,160 @@
+.contact-container {
+    background: url(../../assets/images/bg-contact.gif);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: ease-in-out;
+
+    .whole-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+        animation-delay: 2s;
+
+        .sub-whole-contact {
+            font-family: 'Roboto', sans-serif;
+            margin-top: 10%;
+            display: flex;
+            width: 40%;
+            height: 50%;
+            padding: 2rem;
+            border-radius: 1rem;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: saturate(180%) blur(5px);
+
+            .left {
+                width: 50%;
+                height: 100%;
+
+                .left-container {
+                    margin: 1rem;
+
+                    img {
+                        height: 100px;
+                        width: 100px;
+                        margin-top: 1rem; 
+                        border: 2px solid #ea384d; 
+                        border-radius: 50%;
+                        cursor: pointer;
+
+                        &:hover {
+                            border: 2px solid #fff; 
+                        }
+                    }
+    
+                    h6 {
+                        font-size: 2.5rem;
+                        margin-top: 1rem;
+                        
+                        span {
+                            color: transparent;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            background-image: linear-gradient(#ff97a3, #ff0522);
+                        }
+                    }
+                    
+    
+                    .contact-icons {
+                        font-size: large;
+                        margin-top: -3rem;
+
+                        button {
+                            padding: 5px;
+                            margin: 0 2rem;
+                            border-radius: 50%;
+                            border: 2px solid #fff;
+                            background: #000;
+                            box-shadow: #111 3px 3px 10px;
+                            transition: 500ms ease-in-out;
+                            cursor: pointer;
+
+                            &:hover {
+                                background: #fff;
+
+                                .ic1 {
+                                    color: #111;
+                                    
+                                }
+                            }
+                            
+                            a {
+                                padding: 0 0;
+                            }
+                            .ic1 {
+                                color: #fff;
+                                font-size: 20px;
+                                height: 100%;
+                                width: 100%;
+                                opacity: 1;
+                            }
+                            .ic2 {
+                                color: #0072b1;
+                                font-size: 20px;
+                                height: 100%;
+                                width: 100%;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .line {
+                height: 100%;
+                width: 2px;
+                background-color: #fff;
+            }
+
+            .right {
+                width: 50%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+
+                h6 {
+                    font-size: 2.5rem;
+                    margin-top: 1rem;
+                }
+
+                .contact-form {
+                    margin-top: -5rem;
+
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 1rem 2rem;
+                        .input {
+                            outline: none;
+                            resize: none;
+                            padding: 1rem;
+                            border-radius: 0.5rem;
+                            margin: 1rem 0;
+                            background: transparent;
+    
+                            &:hover {
+                                background: #fff;
+                                transform: scale(1.1);
+                            }
+    
+                            &:focus {
+                                background: #fff;
+                                transform: scale(1.1);
+                            }
+                        }
+                        
+                        .btn {
+                            background: #ea384d;
+                            border-radius: 1rem;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

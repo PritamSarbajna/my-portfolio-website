@@ -1,0 +1,48 @@
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.container2 {
+    width: 100%;
+    will-change: contents;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+}
+
+.contact-page,
+.projects-page,
+.skills-page,
+.about-page {
+    justify-content: center;
+    text-align: center;
+
+    .text-zone {
+        width: 100%;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-50%);
+
+        h1 {
+            font-size: 53px;
+            font-family: 'Coolvetica';
+            color: #ea384d;
+            margin-top: 10;
+            font-weight: 400;
+            position: relative;
+            margin-bottom: 40px;
+            left: 10px;
+        }
+    }
+
+    .text-animate-hover {
+        &:hover {
+            color: #fff;
+        }
+    }
+}

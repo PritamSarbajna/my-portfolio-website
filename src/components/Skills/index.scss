@@ -1,0 +1,180 @@
+.container {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .text-zone {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        left: -10px;
+    }
+
+    .circle-main {
+        position: absolute;
+        margin-left: -50%;
+        height: 520px;
+        width: 520px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        user-select: none;
+
+        .hover-show {
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 5;
+            cursor: pointer;
+
+            &:hover {
+                animation: showspin 10s linear 1s infinite;
+                
+                .circle {
+                    position: absolute;
+                    height: 90px;
+                    width: 90px;
+                    border-radius: 50%;
+                    background-color: rgb(4, 4, 44);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.2s ease;
+                    opacity: 1;
+    
+                    &:nth-child(1) {
+                        background: url(../../assets/images/html.png);
+                        background-size: cover;
+                        background-position: center;
+                        position: absolute;
+                        transform: translateY(-210%);
+                    }
+                    &:nth-child(2) {
+                        position: absolute;
+                        transform: translateX(150%) translateY(-150%);
+                        background: url(../../assets/images/css.png);
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    &:nth-child(3) {
+                        position: absolute;
+                        transform: translateX(210%);
+                        background: url(../../assets/images/javascript.png);
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    &:nth-child(4) {
+                        position: absolute;
+                        transform: translateX(150%) translateY(150%);
+                        background: url(../../assets/images/bootstrap.png);
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    &:nth-child(5) {
+                        position: absolute;
+                        transform: translateY(210%);
+                        background: url(../../assets/images/react.png);
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    &:nth-child(6) {
+                        position: absolute;
+                        transform: translateX(-150%) translateY(150%);
+                        background: url(../../assets/images/django.png);
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    &:nth-child(7) {
+                        position: absolute;
+                        transform: translateX(-210%);
+                        background: url(../../assets/images/tailwind.png);
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    &:nth-child(8) {
+                        position: absolute;
+                        transform: translateX(-150%) translateY(-150%);
+                        background: url(../../assets/images/node-js.png);
+                        background-size: cover;
+                        background-position: center;
+                    }
+                }
+            }
+
+            
+        }
+
+        img {
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            transform: translate(-200px);
+            opacity: 0;
+            animation: fade-in 1s ease 1 2s forwards;
+        }
+    }
+
+    .skill-table {
+        margin-top: 5%;
+        font-size: 20px;
+        margin-left: 50%;
+        padding: 1rem 1rem;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 16px;
+        opacity: 0;
+        animation: fadeIn 3s ease 2s;
+        animation-fill-mode: forwards;
+
+        &:hover {
+            box-shadow: #ccc 2px 2px;
+            background: rgba(255, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .table-tg {
+            border-collapse: collapse;
+            padding: 1rem 0;
+            cursor: all-scroll;
+
+            .tg-header {
+                padding: 3px;
+                font-weight: 200;
+                padding: 10px 5px;
+            }
+
+            .tg-sub-text {
+                font-weight: 200;
+                color: #ccc;
+                padding: 10px 5px;
+            }
+        }
+    }
+}
+
+@keyframes showspin {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes fade-in {
+    to {
+      transform: translate(0);
+      opacity: 1;
+    }
+}
+  

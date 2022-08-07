@@ -1,0 +1,109 @@
+$developer : -1.5rem;
+$programmer : -5rem;
+$ctfplayer : -8.9rem;
+
+.home-page {
+    display: flex;
+
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 40%;
+        transform: translateY(-50%);
+        height: 40%;
+        max-width: 90%;
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 53px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+
+        name {
+            margin-left: 20px;
+        }
+    }
+
+    h2 {
+        color: #ccc;
+        margin-top: 20px;
+        font-weight: 500;
+        font-family: sans-serif;
+        font-size: 11px;
+        letter-spacing: 3px;
+        animation: lightSpeedInRight 1s 2s backwards;
+    }
+    .change-outer {
+        height: 2rem;
+        overflow: hidden;
+
+        .change-inner {
+            animation: animate 8s infinite;
+        }
+    }
+
+    .button {
+        content: 'HIRE ME';
+        background: #ea384d;
+        border-radius: 0.5rem;
+        font-size: 13px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        font-family: 'Coolvetica';
+        text-decoration: none;
+        padding: 10px 18px;
+        color: #fff;
+        margin-top: 25px;
+        float: left;
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+        box-shadow: #ccc 1px 1px 10px;
+
+        &:hover {
+            background: #111;
+            color: #ea384d;
+            border: 1px solid #ea384d;
+            box-shadow: none;
+        }
+    }
+
+    .logo-container {
+        z-index: 0;
+        width: 400px;
+        height: 609px;
+        position: absolute;
+        top: 30%;
+        right: 15%;
+        bottom: 0;
+        left: auto;
+        margin: auto;
+
+        img {
+            animation: fadeIn 2s backwards;
+            animation-delay: 2s;
+        }
+    }
+}
+
+
+@keyframes animate {
+    0%,
+    25% {
+      transform: translateY(0);
+    }
+    26%,
+    50% {
+      transform: translateY($developer);
+    }
+    51%,
+    75% {
+      transform: translateY($programmer);
+    }
+    76%,
+    100% {
+      transform: translateY($ctfplayer);
+    }
+  }
+  

@@ -1,0 +1,30 @@
+$bg-primary : #111;
+$bg-secondary : #222;
+
+$primary-color : #ea384d;
+$secondary-color : #fff;
+
+@import 'animate.css';
+@import '~loaders.css/src/animations/line-scale.scss';
+@import '~loaders.css/src/animations/triangle-skew-spin.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url(./assets/fonts/CoolveticaRg-Regular.woff2) format('woff2');
+}
+
+.loader-active {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    animation: fadeOut 1s 0.5s;
+    animation-fill-mode: forwards;
+  }
