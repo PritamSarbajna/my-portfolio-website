@@ -5,6 +5,10 @@
 - React Js
 - SCSS
 
+## To see the project
+
+[Portfolio](https://pritam-sarbajna-portfolio.netlify.app/)
+
 ## Available Scripts
 
 In the project directory, you can run:
