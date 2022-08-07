@@ -11,7 +11,10 @@
 
 ## Preview 
 
-![portfolio](https://user-images.githubusercontent.com/90236635/183279391-df84aab0-202e-44a3-bb22-0cad0c8dd5da.gif)
+
+https://user-images.githubusercontent.com/90236635/183279517-16d7a1c5-f419-48a7-9788-d9fcbc5b2a28.mp4
+
+
 
 
 ## Available Scripts
