@@ -1,6 +1,9 @@
 # My portfolio 
 
-This repo contains my portfolio made with react js.
+## About
+- This repo contains my portfolio.
+- React Js
+- SCSS
 
 ## Available Scripts
 
