@@ -9,6 +9,11 @@
 
 [Portfolio](https://pritam-sarbajna-portfolio.netlify.app/)
 
+## Preview 
+
+![portfolio](https://user-images.githubusercontent.com/90236635/183279391-df84aab0-202e-44a3-bb22-0cad0c8dd5da.gif)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
