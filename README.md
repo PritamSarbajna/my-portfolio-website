@@ -1,9 +1,12 @@
 # My portfolio 
 
 ## About
-- This repo contains my portfolio.
+ This repo contains my portfolio.
+ 
+## Tech stack used
+
 - React Js
-- SCSS
+- Scss
 
 ## To see the project
 
